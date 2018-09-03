@@ -1,0 +1,9 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^https://localhost:8443/cas-management(\\z|/.*)",
+  "name" : "casManagement",
+  "id" : 19992,
+  "description" : "CAS Management and administrative endpoints",
+  "evaluationOrder" : 2
+}
+
