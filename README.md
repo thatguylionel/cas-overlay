@@ -31,12 +31,6 @@ To package the final web application, run:
 ./build.sh package
 ```
 
-To update `SNAPSHOT` versions run:
-
-```bash
-./build.sh package -U
-```
-
 # Deployment
 
 - Create a keystore file `thekeystore` under `/etc/cas`. Use the password `changeit` for both the keystore and the key/certificate entries.
@@ -46,26 +40,6 @@ On a successful deployment via the following methods, CAS will be available at:
 
 * `http://cas.server.name:8080/cas`
 * `https://cas.server.name:8443/cas`
-
-## Executable WAR
-
-Run the CAS web application as an executable WAR.
-
-```bash
-./build.sh run
-```
-
-## Spring Boot
-
-Run the CAS web application as an executable WAR via Spring Boot. This is most useful during development and testing.
-
-```bash
-./build.sh bootrun
-```
-
-### Warning!
-
-Be careful with this method of deployment. `bootRun` is not designed to work with already executable WAR artifacts such that CAS server web application. YMMV. Today, uses of this mode ONLY work when there is **NO OTHER** dependency added to the build script and the `cas-server-webapp` is the only present module. See [this issue](https://github.com/spring-projects/spring-boot/issues/8320) for more info.
 
 
 ## Spring Boot App Server Selection
@@ -99,3 +73,14 @@ Invokes the CAS Command Line Shell. For a list of commands either use no argumen
 ```bash
 ./build.sh cli
 ```
+
+## application.properties
+This has a MYSQL point, which requires a username/password to be setup.
+
+## TODO
+Complete final section of documentation on how to implement this
+
+## PROJECT Reference Tutorial
+https://www.baeldung.com/spring-security-cas-sso
+
+Great website with all the help you require to understand this project.
