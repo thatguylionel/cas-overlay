@@ -83,4 +83,4 @@ Complete final section of documentation on how to implement this
 ## PROJECT Reference Tutorial
 https://www.baeldung.com/spring-security-cas-sso
 
-Great website with all the help you require to understand this project.
+Great website with all the help you require to understand this project
